@@ -62,7 +62,3 @@ for i in range(0,16):
     m3.append(chr(ord(f_of_b3[i]) ^ ord(b2_chars[i])))
 
 print ''.join(m1) + ''.join(m2) + ''.join(m3)
-
-
-
-
