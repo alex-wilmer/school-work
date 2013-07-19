@@ -90,7 +90,3 @@ for i in range(0,16):
     m4.append(chr(ord(f_of_b4[i]) ^ ord(b4_chars[i])))
 
 print ''.join(m1) + ''.join(m2) + ''.join(m3) + ''.join(m4)
-
-
-
-
