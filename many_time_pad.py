@@ -100,11 +100,11 @@ for i in range(186):
 #   key.append(ord(pt4[i]) ^ ord(cipasc4[i]))
 #   key.append(ord(pt5[i]) ^ ord(cipasc5[i]))
 #   key.append(ord(pt6[i]) ^ ord(cipasc6[i]))
-#	key.append(ord(pt7[i]) ^ ord(cipasc7[i]))
-#	key.append(ord(pt8[i]) ^ ord(cipasc8[i]))
-#	key.append(ord(pt9[i]) ^ ord(cipasc9[i]))
-#	key.append(ord(pt10[i]) ^ ord(cipasc10[i]))
-#	key.append(ord(pt11[i]) ^ ord(cipasc11[i]))
+#   key.append(ord(pt7[i]) ^ ord(cipasc7[i]))
+#   key.append(ord(pt8[i]) ^ ord(cipasc8[i]))
+#   key.append(ord(pt9[i]) ^ ord(cipasc9[i]))
+#   key.append(ord(pt10[i]) ^ ord(cipasc10[i]))
+#   key.append(ord(pt11[i]) ^ ord(cipasc11[i]))
 
 #xor cipher
 for i in range(186):
@@ -138,7 +138,7 @@ for i in cipguess_7_asc:
 for i in cipguess_8_asc:
 	cipguess_8_chars.append(chr(i))
 for i in cipguess_9_asc:
-    cipguess_9_chars.append(chr(i))
+        cipguess_9_chars.append(chr(i))
 for i in cipguess_10_asc:
 	cipguess_10_chars.append(chr(i))
 for i in cipguess_11_asc:
