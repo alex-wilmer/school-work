@@ -108,41 +108,41 @@ for i in range(186):
 
 #xor cipher
 for i in range(186):
-	cipguess_1_asc.append(key[i] ^ ord(cipasc1[i]))
-	cipguess_2_asc.append(key[i] ^ ord(cipasc2[i]))
-	cipguess_3_asc.append(key[i] ^ ord(cipasc3[i]))
-	cipguess_4_asc.append(key[i] ^ ord(cipasc4[i]))
-	cipguess_5_asc.append(key[i] ^ ord(cipasc5[i]))
-	cipguess_6_asc.append(key[i] ^ ord(cipasc6[i]))
-	cipguess_7_asc.append(key[i] ^ ord(cipasc7[i]))
-	cipguess_8_asc.append(key[i] ^ ord(cipasc8[i]))
-	cipguess_9_asc.append(key[i] ^ ord(cipasc9[i]))
-	cipguess_10_asc.append(key[i] ^ ord(cipasc10[i]))
-	cipguess_11_asc.append(key[i] ^ ord(cipasc11[i]))
+    cipguess_1_asc.append(key[i] ^ ord(cipasc1[i]))
+    cipguess_2_asc.append(key[i] ^ ord(cipasc2[i]))
+    cipguess_3_asc.append(key[i] ^ ord(cipasc3[i]))
+    cipguess_4_asc.append(key[i] ^ ord(cipasc4[i]))
+    cipguess_5_asc.append(key[i] ^ ord(cipasc5[i]))
+    cipguess_6_asc.append(key[i] ^ ord(cipasc6[i]))
+    cipguess_7_asc.append(key[i] ^ ord(cipasc7[i]))
+    cipguess_8_asc.append(key[i] ^ ord(cipasc8[i]))
+    cipguess_9_asc.append(key[i] ^ ord(cipasc9[i]))
+    cipguess_10_asc.append(key[i] ^ ord(cipasc10[i]))
+    cipguess_11_asc.append(key[i] ^ ord(cipasc11[i]))
 
 #convert to chars
 for i in cipguess_1_asc:
-	cipguess_1_chars.append(chr(i))
+    cipguess_1_chars.append(chr(i))
 for i in cipguess_2_asc:
-	cipguess_2_chars.append(chr(i))
+    cipguess_2_chars.append(chr(i))
 for i in cipguess_3_asc:
-	cipguess_3_chars.append(chr(i))
+    cipguess_3_chars.append(chr(i))
 for i in cipguess_4_asc:
-	cipguess_4_chars.append(chr(i))
+    cipguess_4_chars.append(chr(i))
 for i in cipguess_5_asc:
-	cipguess_5_chars.append(chr(i))
+    cipguess_5_chars.append(chr(i))
 for i in cipguess_6_asc:
-	cipguess_6_chars.append(chr(i))
+    cipguess_6_chars.append(chr(i))
 for i in cipguess_7_asc:
-	cipguess_7_chars.append(chr(i))
+    cipguess_7_chars.append(chr(i))
 for i in cipguess_8_asc:
-	cipguess_8_chars.append(chr(i))
+    cipguess_8_chars.append(chr(i))
 for i in cipguess_9_asc:
-        cipguess_9_chars.append(chr(i))
+    cipguess_9_chars.append(chr(i))
 for i in cipguess_10_asc:
-	cipguess_10_chars.append(chr(i))
+    cipguess_10_chars.append(chr(i))
 for i in cipguess_11_asc:
-	cipguess_11_chars.append(chr(i))
+    cipguess_11_chars.append(chr(i))
 	
 #print target plain text
 print '1', ''.join(cipguess_1_chars)
