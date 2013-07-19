@@ -51,15 +51,15 @@ f_of_b3 = list(aes.decrypt(b3))
 
 #f[b1] xor iv
 for i in range(0,16):
-  m1.append(chr(ord(f_of_b1[i]) ^ ord(iv_chars[i])))
+    m1.append(chr(ord(f_of_b1[i]) ^ ord(iv_chars[i])))
 	
 #f[b2] xor b1
 for i in range(0,16):
-	m2.append(chr(ord(f_of_b2[i]) ^ ord(b1_chars[i])))
+    m2.append(chr(ord(f_of_b2[i]) ^ ord(b1_chars[i])))
 
 #f[b3] xor b2
 for i in range(0,16):
-	m3.append(chr(ord(f_of_b3[i]) ^ ord(b2_chars[i])))
+    m3.append(chr(ord(f_of_b3[i]) ^ ord(b2_chars[i])))
 
 print ''.join(m1) + ''.join(m2) + ''.join(m3)
 
