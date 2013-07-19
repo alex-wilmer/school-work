@@ -56,38 +56,38 @@ f_of_b1 = list(aes.encrypt(iv))
 iv_list = list(iv)
 iv_num = []
 for i in range(0,16):
-  iv_num.append(ord(iv_list[i]))
+    iv_num.append(ord(iv_list[i]))
 	
 #increment counter, repeat function
 iv_num[15] += 1
 for i in range(0,16):
-	iv_chars[i] = chr(iv_num[i])
+    iv_chars[i] = chr(iv_num[i])
 iv = ''.join(iv_chars)
 f_of_b2 = list(aes.encrypt(iv))
 
 #increment counter, repeat function
 iv_num[15] += 1
 for i in range(0,16):
-	iv_chars[i] = chr(iv_num[i])
+    iv_chars[i] = chr(iv_num[i])
 iv = ''.join(iv_chars)
 f_of_b3 = list(aes.encrypt(iv))
 
 #increment counter, repeat function
 iv_num[15] += 1
 for i in range(0,16):
-	iv_chars[i] = chr(iv_num[i])
+    iv_chars[i] = chr(iv_num[i])
 iv = ''.join(iv_chars)
 f_of_b4 = list(aes.encrypt(iv))
 
 #xor cipher with function pad
 for i in range(0,16):
-	m1.append(chr(ord(f_of_b1[i]) ^ ord(b1_chars[i])))
+    m1.append(chr(ord(f_of_b1[i]) ^ ord(b1_chars[i])))
 for i in range(0,16):
-	m2.append(chr(ord(f_of_b2[i]) ^ ord(b2_chars[i])))
+    m2.append(chr(ord(f_of_b2[i]) ^ ord(b2_chars[i])))
 for i in range(0,16):
-	m3.append(chr(ord(f_of_b3[i]) ^ ord(b3_chars[i])))
+    m3.append(chr(ord(f_of_b3[i]) ^ ord(b3_chars[i])))
 for i in range(0,16):
-	m4.append(chr(ord(f_of_b4[i]) ^ ord(b4_chars[i])))
+    m4.append(chr(ord(f_of_b4[i]) ^ ord(b4_chars[i])))
 
 print ''.join(m1) + ''.join(m2) + ''.join(m3) + ''.join(m4)
 
